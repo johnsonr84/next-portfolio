@@ -28,7 +28,7 @@ export default defineType({
           { title: "Design", value: "design" },
           { title: "Tools", value: "tools" },
           { title: "Soft Skills", value: "soft-skills" },
-          { title: "Other", value: "other" },
+          { title: "Other", value: "other" },   
         ],
       },
       validation: (Rule) => Rule.required(),
