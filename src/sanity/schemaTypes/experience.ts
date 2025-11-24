@@ -23,11 +23,11 @@ export default defineType({
       type: "string",
       options: {
         list: [
-          { title: "Full-time", value: "full-time" },
-          { title: "Part-time", value: "part-time" },
-          { title: "Contract", value: "contract" },
-          { title: "Freelance", value: "freelance" },
-          { title: "Internship", value: "internship" },
+          { title: "Full-time", value: "Full-time" },
+          { title: "Part-time", value: "Part-time" },
+          { title: "Contract", value: "Contract" },
+          { title: "Freelance", value: "Freelance" },
+          { title: "Internship", value: "Internship" },
         ],
       },
     }),
@@ -64,18 +64,18 @@ export default defineType({
     }),
     defineField({
       name: "responsibilities",
-      title: "Key Responsibilities",
+      title: "Key Achievements",
       type: "array",
       of: [{ type: "string" }],
       description: "Bullet points of main responsibilities",
     }),
-    defineField({
-      name: "achievements",
-      title: "Key Achievements",
-      type: "array",
-      of: [{ type: "string" }],
-      description: "Quantifiable accomplishments",
-    }),
+    // defineField({
+    //   name: "achievements",
+    //   title: "Key Achievements",
+    //   type: "array",
+    //   of: [{ type: "string" }],
+    //   description: "Quantifiable accomplishments",
+    // }),
     defineField({
       name: "technologies",
       title: "Technologies Used",
