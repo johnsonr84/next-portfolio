@@ -51,7 +51,7 @@ export default defineType({
       name: "description",
       title: "Description",
       type: "text",
-      rows: 4,
+      rows: 5,
       description: "Notable courses, achievements, or activities",
     }),
     defineField({
@@ -69,6 +69,18 @@ export default defineType({
         hotspot: true,
       },
     }),
+
+    // 🔹 NEW FIELD: Certificate image
+    defineField({
+      name: "certificateImage",
+      title: "Certificate Image",
+      type: "image",
+      options: {
+        hotspot: true,
+      },
+      description: "Upload a scan or screenshot of the certificate.",
+    }),
+
     defineField({
       name: "website",
       title: "Institution Website",
