@@ -37,7 +37,7 @@ export async function submitContactForm(formData: FormData) {
         from: process.env.CONTACT_FROM_EMAIL as string,
         to: process.env.CONTACT_TO_EMAIL as string,
         subject: `Portfolio Contact: ${subject} (${name})`,
-        reply_to: email, // so you can just hit "Reply" in your inbox
+        replyTo: email, // so you can just hit "Reply" in your inbox
         text: `
 You have a new contact form submission from your portfolio:
 
