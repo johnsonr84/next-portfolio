@@ -1,9 +1,10 @@
-import PortfolioContent from "../../components/PortfolioContent";
+// import PortfolioContent from "../../components/PortfolioContent";
 
-export default async function Home() {
+export default function Home() {
   return (
-    <main className="min-h-screen">
-      <PortfolioContent />
+    <main style={{ padding: 40 }}>
+      <h1>Deployed test page</h1>
+      <p>If you see this on Vercel, the routing is fine.</p>
     </main>
   );
 }
